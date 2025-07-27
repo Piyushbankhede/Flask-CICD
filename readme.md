@@ -98,7 +98,7 @@ echo Building Docker image...
 docker build -t flaskappcicd .
 
 echo Running container...
-docker run -itd --name flaskc1 -p 5000:5000 flaskappcicd
+docker run -dit --name flaskc1 -p 5000:5000 flaskappcicd
 
 echo "Container is created and running..."
 ```
